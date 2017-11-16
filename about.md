@@ -14,7 +14,7 @@ ___
 ## Partners:
 
 [![Global Tech Team](https://github.com/ConnectBox/website_posts/blob/master/GlobalTechTeam_200.png?raw=true)](http://globaltech.team/)
-[![OM](om_200.png)](http://om.org/)
+[![OM](https://github.com/ConnectBox/website_posts/blob/master/om_200.png?raw=true)](http://om.org/)
 
 ## Join the team:
 

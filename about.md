@@ -1,7 +1,7 @@
 # About/Contact
 
 For more information about the project, send an email to: <connectboxes@globaltech.team>
-
+___
 
 ## Team Members:
 
@@ -13,11 +13,11 @@ For more information about the project, send an email to: <connectboxes@globalte
 
 ## Partners:
 
-[![Global Tech Team](GlobalTechTeam_200.png)](http://globaltech.team/)
+[![Global Tech Team](https://github.com/ConnectBox/website_posts/blob/master/GlobalTechTeam_200.png?raw=true)](http://globaltech.team/)
 [![OM](om_200.png)](http://om.org/)
 
 ## Join the team:
 
-[![Github Project](github_200.png)](https://github.com/ConnectBox/connectbox-pi)
+[![Github Project](https://github.com/ConnectBox/website_posts/blob/master/github_200.png?raw=true)](https://github.com/ConnectBox/connectbox-pi)
 
 ### Fork us on Github!

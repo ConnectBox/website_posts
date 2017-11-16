@@ -5,7 +5,7 @@ ___
 
 <span style="color:SteelBlue">The following articles describe the key functions of constructing, administering, and further developing the ConnectBoxes.</span>
 
-# Making a ConnectBox
+# Making Your Own ConnectBox
 
 See [Deployment Docs](https://github.com/ConnectBox/connectbox-pi/blob/master/docs/deployment.md)
 

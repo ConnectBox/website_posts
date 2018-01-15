@@ -1,6 +1,6 @@
 # About/Contact
 
-For more information about the project, send an email to: <connectboxes@globaltech.team>
+For more information about the project, send an email to: <connectbox@globaltech.team>
 ___
 
 ## Team Members:

@@ -9,6 +9,9 @@
     - [Step 6: Resize/Move the ext4 Partition](#step-6-resizemove-the-ext4-partition)
     - [Step 7: Creating a FAT32 Partition](#step-7-creating-a-fat32-partition)
     - [Step 8: Use gedit to Modify fstab](#step-8-use-gedit-to-modify-fstab)
+        - [METHOD 1](#method-1)
+        - [METHOD 2](#method-2)
+        - [Editing fstab](#editing-fstab)
     - [Step 9: Final Steps](#step-9-final-steps)
 
 <!-- /TOC -->
@@ -76,7 +79,7 @@ A warning screen will come up...just click the "OK" button
 
 ![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_5.png?raw=true "Resize Partition")
 
-On the top menu, first click the green checkmark icon.  Another warning will come up.  Click on the "Apply" button.
+On the top menu, first click the <span style="color:green">green</span> checkmark icon.  Another warning will come up.  Click on the "Apply" button.
 
 ![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_6.png?raw=true "Resize Partition")
 
@@ -104,7 +107,7 @@ Click the "Add" button.
 
 ![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_9.png?raw=true "Resize Partition")
 
-Once again, a warning message will come up. Click on the "Apply" button to continue.
+Click on the <span style="color:green">green</span> check and once again, a warning message will come up. Click on the "Apply" button to continue.
 
 ![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_10.png?raw=true "Resize Partition")
 
@@ -126,11 +129,25 @@ Using the Ubuntu search, look for the program "Terminal" and then click on it to
 
 ![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal.png?raw=true "Terminal")
 
-At the terminal, you'll need to first find out the "UUID" for the WIN-SIDE partition we made.  You do that by typing in `lsblk -f'
+At the terminal, you'll need to first find out the "UUID" for the WIN-SIDE partition we made.  Depending on your version of Linux, you can do one of the two following methods for obtaining it.  The first one is easier but doesn't always work.
+
+### METHOD 1
+In the terminal type in `lsblk -f'
 
 ![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal_2.png?raw=true "Terminal")
 
 In the above picture, what we are looking for is the "UUID" for our "WIN-SIDE" partition.  Make a note of your ID as we'll use it in a momement.
+
+### METHOD 2
+If the above doesn't display the UUID, you can try this other method.  In the terminal, follow the first command by entering this command on a new line:
+
+`sudo blkid -o full -s UUID`
+
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal_4.png?raw=true "Terminal")
+
+In the first command results (red box), you will see that the "WIN-SIDE" partition is associated with `sdb2`. Match that value up with the results of the second one (orange box) that shows `sdb2` UUID. 
+
+### Editing fstab
 
 Next thing you need to do is type: `sudo gedit` at the command prompt followed by your user's password. This will launch up a graphical text editor in which we can edit the `fstab` file. From the file window, drag and drop the `fstab` file into the gedit window to edit it.
 

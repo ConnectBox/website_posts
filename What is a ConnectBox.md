@@ -39,7 +39,8 @@ The amazing thing about a ConnectBox is that it can be built between $50 and $70
 ## **<span style="color:gray">ConnectBox Specifications:</span>**
 
 + Storage: Internal flash memory and/or external USB flash memory (fat32 format) 
-+ LED’s: Green-Power on, Red-Battery charging, Orange - TBD, Ethernet access/speed (Green/Yellow)
++ LED’s: Green-Power on, Red-Battery charging, Orange - Power Level, Ethernet access/speed (Green/Yellow)
+        Power Level: solid - full, blink once - 2/3-full, blink twice 1/3-2/3, blink three times - <1/3
 + Switches: Power On/Off
 + Power: 
     + Internal 3400mAh Rechargeable 3.7 V Li-Ion Battery (59 grams)

@@ -21,3 +21,7 @@ There are a few steps (a few more than we’d like to be honest, but we’re wor
 6. Pop it back in the ConnectBox and start it.
 
 Note: You won’t be able to use the internal storage on the microSD for data with this process, but if you’re using external USB storage, that won't be a problem. There is a process that allows you to dual partition the internal microSD for use both for the OS and for your media, but it’s for advanced users: https://connectbox.technology/wp/utilizing-your-existing-microsd-boot-card-for-your-media-files/
+
+If you want to use a master connectbox-pi release 20180122 with a 10GB fat32 format partition on the start of the micro-sD then in step #1 above download from:
+https://emailnet-my.sharepoint.com/:u:/g/personal/kirk_wilson_om_org/Eb2HpKKxcF1Fn8qZar-zvEABh8vPpKYERoSiPsTaLvKtHw?e=AiAlPh
+This will require a 16GB micro-sD card and will fill it with 2 partitions, a fat32 and an ext4 partition for booting the ConnectBox OS.

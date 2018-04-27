@@ -39,7 +39,7 @@ We'll now want to resize that partion down from taking up nearly all the entire 
 
 From the Linux Desktop (in this case I'll be using an Ubuntu 16.04 computer), you'll want to install the program `gparted` which allows us to modify and create partitions on the microSD. By clicking on the orange "Ubuntu Software" icon on the left dock, do a search for the gparted program and then install it. 
 
-![gparted search](https://raw.githubusercontent.com/ConnectBox/website_posts/master/create_vFAT/partition_gparted_install.png "Install gparted on Ubuntu")
+![gparted search](https://raw.githubusercontent.com/ConnectBox/website_posts/master/create_vFAT/partition_gparted_install.png?raw=true "Install gparted on Ubuntu")
 
 ## Step 4: Selecting the microSD Device
 

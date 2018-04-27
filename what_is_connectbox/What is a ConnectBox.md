@@ -1,6 +1,6 @@
 # What is a ConnectBox?
 
-![disassembled box](https://raw.githubusercontent.com/ConnectBox/website_posts/master/cb.png "Disassembled ConnectBox")
+![disassembled box](https://raw.githubusercontent.com/ConnectBox/website_posts/master/what_is_connectbox/cb.png "Disassembled ConnectBox")
 ConnectBox are self-contained, self-powered, WiFi based portable media distribution system. It allows users to create a full featured ‘digital library’ from which media (text, video, audio, applications) can be shared on mobile phones, tablets, laptops, desktops in an off-the-grid environment without depending on access to the internet or electricity. Any device with WiFi capability can wirelessly connect to a ConnectBox and access/download content with a simple web browser. ConnectBox will support over 16+ simultaneous 360p video streams/download sessions from different devices.
 
 ## **<span style="color:gray">Where would a ConnectBox be used?</span>**
@@ -11,7 +11,7 @@ A ConnectBox acts as a local digital access point that isn’t capable of being 
 
 A ConnectBox uses off-the-shelf commercial hardware, a custom PCB, custom printed case, a micro-SD flash drive, and software that when combined give you a small, low-powered webserver. The webserver acts as a captive portal, and delivers files that are stored on the lash drive or USB flash drives. It is based on freely available open source software that was developed by a number of different individuals and/or teams of people. It is available with build, connection, configuration and customization instructions for creating and customizing your very own ConnectBox. It runs a small Linux operating system on the hardware that can be tuned with added features and functions.
 
-![disassembled box](https://raw.githubusercontent.com/ConnectBox/website_posts/master/connectbox_parts.png "Disassembled ConnectBox")
+![disassembled box](https://raw.githubusercontent.com/ConnectBox/website_posts/master/what_is_connectbox/connectbox_parts.png "Disassembled ConnectBox")
 
 
 ## **<span style="color:gray">So how much does it cost?</span>**

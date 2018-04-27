@@ -39,17 +39,17 @@ We'll now want to resize that partion down from taking up nearly all the entire 
 
 From the Linux Desktop (in this case I'll be using an Ubuntu 16.04 computer), you'll want to install the program `gparted` which allows us to modify and create partitions on the microSD. By clicking on the orange "Ubuntu Software" icon on the left dock, do a search for the gparted program and then install it. 
 
-![gparted search](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_install.png?raw=true "Install gparted on Ubuntu")
+![gparted search](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_install.png?raw=true "Install gparted on Ubuntu")
 
 ## Step 4: Selecting the microSD Device
 
 After it is installed, attach your microSD card to the machine that is running VirtualBox. You'll need to click onto the VirtualBox Window's menu and select \Devices\USB\ and then pick the device that is your microSD card. Doing this will transfer control from your host computer (Windows) to your Ubuntu computer running inside the VirtualBox.
 
-![gparted USB](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_select_USB.png?raw=true "Transfer USB to VM")
+![gparted USB](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_select_USB.png?raw=true "Transfer USB to VM")
 
 Once you do that, then run gparted. By default, gparted comes up with your own virtual machine's hard drive (/dev/sda). We don't want that. So you'll need to select from the drop down menu on the upper right side the correct drive. Usually, this should be the second one; /dev/sdb. Ensure that the reported size of the drive roughly matches the size of your microSD card.
 
-![gparted Select USB](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_select_drive.png?raw=true "Select USB Drive")
+![gparted Select USB](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_select_drive.png?raw=true "Select USB Drive")
 
 You'll notice that the partion on the drive is currently one massive ext4 partition with a small amount of unallocated space at the end (right side) of the drive.
 
@@ -57,35 +57,35 @@ You'll notice that the partion on the drive is currently one massive ext4 partit
 
 Before we can do anything with this drive, we need to tell it to unmount itself from the operating system. Right click on the yellow and white bar and select "Unmount".
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_unmount_1.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_unmount_1.png?raw=true "Resize Partition")
 
 ## Step 6: Resize/Move the ext4 Partition
 
 Putting your cursor over the partition, right click on it to bring up a menu and select "Resize/Move"
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_2.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_2.png?raw=true "Resize Partition")
 
 In the box that shows up, click in the second box down and change the existing number to 4000.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_3.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_3.png?raw=true "Resize Partition")
 
 Then go to the first box and fill in the rounded number of the remaining space. In my example with a 16Gb microSD card, I'm allocating roughly 11000 megabytes and that will automatically calculate the third box's (Free space following) number. As stated above, we want to leave a small buffer at the end of at least 128 MiB. We'll leave the 342 number as the 11Gb of space in the front is enough to store all our media. You'll need to adjust your sizes in these boxes to match the capacity of your card. Just remember to make the ext4 drive about 4Gb and leave that buffer space after.
 
 Click the "Resize/Move" button
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_4.png?raw=true  "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_4.png?raw=true  "Resize Partition")
 
 A warning screen will come up...just click the "OK" button
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_5.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_5.png?raw=true "Resize Partition")
 
 On the top menu, first click the <span style="color:green">green</span> checkmark icon.  Another warning will come up.  Click on the "Apply" button.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_6.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_6.png?raw=true "Resize Partition")
 
 The process will start of resizing and moving the partition around on your microSD card. This can take a very long time to complete...  You'll want to look at the details as the process move along checking for disk errors. If there are disk errors, you probably should start from the beginning again or use a new microSD card.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_7.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_7.png?raw=true "Resize Partition")
 
 The reason that we not only resized the partition down but also moved it towards the end of the space is that if we want to plug this device onto a Windows machine to copy content over, Windows requires that the partition for the media be first on the microSD card.
 
@@ -93,7 +93,7 @@ The reason that we not only resized the partition down but also moved it towards
 
 Once that operation is complete, we'll now need to convert that unalloced space into a new partition that we can use to store our media data. With our mouse over the gray partition labeled "unallocated", right click. From the menu, select "New".
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_8.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_8.png?raw=true "Resize Partition")
 
 A new window will come up that wants to know how to create that new partition.
 
@@ -105,19 +105,19 @@ A new window will come up that wants to know how to create that new partition.
 
 Click the "Add" button.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_9.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_9.png?raw=true "Resize Partition")
 
 Click on the <span style="color:green">green</span> check and once again, a warning message will come up. Click on the "Apply" button to continue.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_10.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_10.png?raw=true "Resize Partition")
 
 This will take a relatively short bit of time to complete.
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_11.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_11.png?raw=true "Resize Partition")
 
 Once the process has finished successfully, you'll get a screen like this:
 
-![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_resize_12.png?raw=true "Resize Partition")
+![gparted resize](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_resize_12.png?raw=true "Resize Partition")
 
 You'll notice that the first partition is a fat32 one (where our media will go), the second is ext4 (where the ConnectBox's boot operating system is located), and the final unallocated space that gives us a buffer for when we want to mirror the microSD card out.
 
@@ -127,14 +127,14 @@ Close the gparted program and Ubuntu should automatically mount both of the part
 
 Using the Ubuntu search, look for the program "Terminal" and then click on it to launch it.
 
-![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal.png?raw=true "Terminal")
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_terminal.png?raw=true "Terminal")
 
 At the terminal, you'll need to first find out the "UUID" for the WIN-SIDE partition we made.  Depending on your version of Linux, you can do one of the two following methods for obtaining it.  The first one is easier but doesn't always work.
 
 ### METHOD 1
 In the terminal type in `lsblk -f'
 
-![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal_2.png?raw=true "Terminal")
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_terminal_2.png?raw=true "Terminal")
 
 In the above picture, what we are looking for is the "UUID" for our "WIN-SIDE" partition.  Make a note of your ID as we'll use it in a momement.
 
@@ -143,7 +143,7 @@ If the above doesn't display the UUID, you can try this other method.  In the te
 
 `sudo blkid -o full -s UUID`
 
-![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal_4.png?raw=true "Terminal")
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_terminal_4.png?raw=true "Terminal")
 
 In the first command results (red box), you will see that the "WIN-SIDE" partition is associated with `sdb2`. Match that value up with the results of the second one (orange box) that shows `sdb2` UUID. 
 
@@ -157,7 +157,7 @@ Go the end of the text file and add in a new line. **It is very important that y
 
 Replace the `UUID=D2D0-8176` portion with the UUID that you wrote down earlier. Double check your work and save the file and close the editor.
 
-![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_gparted_terminal_3.png?raw=true "Terminal")
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_gparted_terminal_3.png?raw=true "Terminal")
 
 ## Step 9: Final Steps
 
@@ -165,7 +165,7 @@ Eject disk from Ubuntu. You can now use this on a Window's or Mac computer to ad
 
 <span style="color:red">**One bit of warning:**</span> Windows is not going to like the "ext4" partition and will complain about when you add it to the machine. Expect to get something like this:
 
-![Terminal](https://github.com/ConnectBox/website_posts/blob/master/partition_windows_error.png?raw=true "Terminal")
+![Terminal](https://github.com/ConnectBox/website_posts/blob/master/create_vFAT/partition_windows_error.png?raw=true "Terminal")
 
 Be sure to hit "Cancel" to close out the window and any others that pop up.
 

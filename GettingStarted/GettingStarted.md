@@ -1,11 +1,10 @@
-> ![](image1.png)
+> ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image1.png)
 
 # Getting Started Guide With Your ConnectBox
 Your ConnectBox is nearly ready to go. There are just a few things that we recommend that you do first to enhance the end-user experience.
 
 ## Initial Administration / Setup
 ---
-
 ConnectBox comes with system software. No content is included. You'll need to add your own content to the device using the guidelines in the section below.
 
 Your ConnectBox comes with an internal lithium-ion battery. To charge the battery, you'll need to connect up a 1A or greater microUSB charger like are found with many cell phones. From charging from an empty to full battery, expect it to take around 12 hours. Your ConnectBox has built-in low battery protection which normally would ruin the battery if the battery was allowed to discharge all the way down.
@@ -41,7 +40,7 @@ Change the WiFi channel to something that might be less congested in your area. 
 
 If you perhaps would like to share with your connected users some sort of banner message (e.g., contact info or organization name) you can set this from the (Configure -\> Banner Message) menu item. This box accepts input as either plain text or as html formatted. An example of something that would produce a banner that looks like this:
 >
-> Brought to you by: **Global Tech Team**
+> Brought to you by: <span style="color:#008000">**Global Tech Team**</span>
 >
 > +1-800-555-1212 *(USA)*
 
@@ -119,14 +118,14 @@ To update the files on the USB stick, go to the Configure Menu in Administration
 
 &nbsp;  | &nbsp;  | &nbsp;  | &nbsp; 
 --- | --- | --- | ---
-![](image2.png) | ![](image3.png) | ![](image4.png) | ![](image5.png)
-![](image6.png) | ![](image7.png) | ![](image8.png) | ![](image9.png)
-![](image10.png) | ![](image11.png) | ![](image12.png) | ![](image13.png)
-![](image14.png) | ![](image15.png) | ![](image16.png) | ![](image23.png)
-![](image24.png) | ![](image25.png) | ![](image26.png) | ![](image27.png)
-![](image28.png) | ![](image29.png) | ![](image30.png) | ![](image37.png)
-![](image38.png) | ![](image39.png) | ![](image40.png) | ![](image41.png)
-![](image42.png) | ![](image43.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image2.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image3.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image4.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image5.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image6.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image7.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image8.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image9.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image10.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image11.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image12.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image13.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image14.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image15.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image16.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image23.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image24.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image25.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image26.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image27.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image28.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image29.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image30.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image37.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image38.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image39.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image40.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image41.png)
+![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image42.png) | ![](https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/image43.png)
 
 
 ---

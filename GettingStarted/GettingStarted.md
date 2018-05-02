@@ -158,6 +158,6 @@ Note that there is NO extension for the file name.  So for our example, you woul
 This is an open source project and we appreciate your feedback and suggestions. Please visit:
 [http://feedback.connectbox.technology/](http://feedback.connectbox.technology/) and leave your comments. Anything posted here will automatically go directly to the developers for consideration.
 
-ConnectBox Homepage: [https://connectbox.technology/wp/]
+ConnectBox Homepage: [https://connectbox.technology/wp/](https://connectbox.technology/wp/)
 
-ConnectBox Development Source Code: [https://github.com/ConnectBox]
+ConnectBox Development Source Code: [https://github.com/ConnectBox](https://github.com/ConnectBox)

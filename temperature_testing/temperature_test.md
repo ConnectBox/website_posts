@@ -23,21 +23,21 @@ Wrote some Python code for the ConnectBox which monitored and datalogged to disk
 ## Results
 
 ### Temperature/Humidity Results
-![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/image1.jpg "Humidity Results")
+![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/Image1.jpg "Humidity Results")
 
 From the temperature / humidity graph you can notice a few things.  The unit went from the ambient room temperature of around 80°F to around 107°F in about an hour where it pretty much stabilized.  The unit was idling during this time.  After I started the CPU Stress Test, the temperature rose some more but only by another 10 degrees F or so.  The highest temperature that the unit every reached was only 112°F / 44.6C; well within the unit's range of getting pretty warm but no where near a meltdown.
 
 Took another hour for the unit to cool down to the ambient room temps after the unit shutdown.  Longer than I expected but I guess unsurprising since I did have the vents covered.
 
 ### Battery Discharge
-![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/image2.jpg "Battery Discharge")
+![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/Image2.jpg "Battery Discharge")
 
 As expected, the unit had a rather linear discharge of between 480mA to 580mA while idling.  What I find as odd is that the discharge rate increased over time even through the unit was in idle.  Perhaps that is related to the previous chart which show that as the temperature goes up, the efficiency of the battery declines??  Or maybe our OS is having an increasing load over time that we aren't expecting?
 
 As expected, once the Stress Test starts, the CPU needs more juice and there is a dramatic increase in the current required.  But again there is that creep upward whereas I would have expected a more straight horizontal line.
 
 ### Battery Drain
-![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/image3.jpg "Battery Drain")
+![alt text](https://raw.githubusercontent.com/ConnectBox/website_posts/master/temperature_testing/Image3.jpg "Battery Drain")
 
 The above battery drain from the initial 94% down to around 2% where the unit shut down automatically shows a fairly constant drain over time.  Oddly enough, we are not seeing the expected the battery's capacity numbers to take a nose dive once the Stress Test starts and the current load increased.  Instead, we actually continue to see a rather linear drain down.
 

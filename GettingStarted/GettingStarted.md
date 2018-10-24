@@ -1,6 +1,9 @@
 # Getting Started Guide to Your ConnectBox
 
-<img src="cb_icon.png" alt="ConnectBox" width="150">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/cb_icon.png" alt="ConnectBox" width="150">
+
+[DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V4.pdf)
+
 
 This ConnectBox is nearly ready to go already. Just a few things that you need to do first to make the end user experience useful.
 
@@ -16,7 +19,7 @@ PLEASE FULLY CHARGE YOUR CONNECTBOX BEFORE THE FIRST USE
 
 _Note: if you are connecting from a mobile device it may &#39;validate the internet connectivity and/or check if a login is required for the network join&#39;. In this case it may show a web browser window that say&#39;s to connect to_ [http://connectbox](http://connectbox/)_. In some cases you may need to go to the &#39;more&#39; menu and &#39;keep the connection&#39; – close the default browser and re-open a web browser on the device and enter_ [http://connectbox](http://connectbox/) _in the URL window. This should open the default front page of the Connectbox._
 
-<img src="first_run.png" alt="First Run" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/first_run.png" alt="First Run" width="300">
 
 
 1. Navigate to the Administration area: [http://connectbox/admin](http://connectbox/admin) (or press the cog icon on the bottom right of the screen) and login with the default Connectbox credentials (username and password are casesensitive):
@@ -26,8 +29,8 @@ _Note: if you are connecting from a mobile device it may &#39;validate the inter
 
 _Recommended_: Change the password for the Administration area. Go to the Configure Menu and select Password. Enter a new password and press submit. When you next try to enter the admin portal of the Connectbox, you will be prompted to login again. Use the new password when this happens.
 
-<img src="admin1.png" alt="Admin Area" width="300">
-<img src="admin2.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin1.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin2.png" alt="Admin Area" width="300">
 
 ## Optional Admin Setup Items
 
@@ -35,19 +38,19 @@ _HOSTNAME_:
 
 Change the name of the hostname (by default this is `connectbox`) to something of your own choosing. From the admin menu, go to (Configure -> Hostname). This only appears in the location bar of the browser. If you are changing the hostname, you will need to use the new [http://hostname](http://hostname/) for the default web page, or [http://hostname/admin](http://hostname/admin) for the administrative area. Additionally, new login credentials will be asked for.
 
-<img src="admin3.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin3.png" alt="Admin Area" width="300">
 
 - _WiFi__SSID_:
 
 Change the name of the wireless network. (Configure -> SSID). When you do this, you will be disconnected from the wireless network and you will need to locate and join the newly named wireless network.
 
-<img src="admin4.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin4.png" alt="Admin Area" width="300">
 
 - _WiFi__Channel_:
 
 Change the WiFi channel to something that might be less congested in your area. (Configure -> Channel) Your choices are channels 1 – 11 from the dropdown menu. When you change the WiFi channel, you will temporarily be disconnected form the Connectbox until your device reconnects to the WiFi SSID on the new channel.
 
-<img src="admin5.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin5.png" alt="Admin Area" width="300">
 
 - _Icon-Only UI Banner Message_:
 
@@ -63,7 +66,7 @@ Using the html format of:
 <p>Brought to you by: <span style="color: #008000;"><strong>Global Tech Team</strong></span></p><p>+1-800-555-1212 <em>(USA)</em></p>
 ```
 
-<img src="admin6.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin6.png" alt="Admin Area" width="300">
 
 - _Enabling Custom_ _Web_ _Interface:_
 
@@ -73,7 +76,7 @@ For groups that would like a more customized look to the interface, they can put
 
 However, from the ConnectBox Administration menu, you do need to trigger this mode by going to (Configuration -> Static site) and clicking the `On` button then clicking update. Reboot the device after the change for it to be enabled. To return back to the "Icon- Only User Interface", repeat the process except click on the `Off`; button and then the `Update` button followed by a reboot.
 
-<img src="admin7.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin7.png" alt="Admin Area" width="300">
 
 ## System Control Items
 
@@ -93,7 +96,7 @@ Will shut down and restart the ConnectBox – Note: it will take several seconds
 
 This will reset all options to the default configuration and wipe all previous statistics / history.
 
-<img src="admin8.png" alt="Admin Area" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin8.png" alt="Admin Area" width="300">
 
 # Adding in Media Content
 
@@ -101,7 +104,7 @@ You have the option of connecting an external USB stick to the USB port that is 
 
 The unit will default to a simple Icon only interface allowing you simple navigation to the files and folders you have placed on the USB media stick.
 
-<img src="gui1.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/gui1.png" alt="GUI" width="300">
 
 ## Icon-Only User Interface Suggestions
 
@@ -117,13 +120,13 @@ When you insert your USB stick into the ConnectBox, content will automatically b
 
 To update the files on the USB stick, go to the Configure Menu in Administration area, then go to System and press `Unmount USB`, then remove the USB stick from the ConnectBox. Or you can remove the USB at any time the unit is powered off. **NOTE** : Do not remove the USB key while the unit is powered on as this could cause corruption of the USB key.
 
-<img src="file_explorer.png" alt="GUI">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/file_explorer.png" alt="GUI">
 <br />
-<img src="gui1.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/gui1.png" alt="GUI" width="300">
 
 Some samples of the file icons are:
 
-<img src="icons.png" alt="GUI">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/icons.png" alt="GUI">
 
 # Using the Chat functionality
 
@@ -131,37 +134,37 @@ Built into the main function of the Connectbox is the ability for users connecte
 
 Tapping the Chat Icon
 
-<img src="chat1.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/chat1.png" alt="GUI" width="300">
 
 This opens the chat window:
 
-<img src="chat2.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/chat2.png" alt="GUI" width="300">
 
 Note that you can change the `name` of the user in the bottom left panel and enter the text of the message in the bottom right panel.  Once entered it is posted by pressing the right arrow button on the bottom right.
 
-<img src="chat3.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/chat3.png" alt="GUI" width="300">
 
 All users can see all messages that have been posted.  Additionally, right to left languages can be supported by pressing the alignment button between the name and message entry boxes.  This allows each user to control the direction of text entry for their own post.
 
-<img src="chat4.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/chat4.png" alt="GUI" width="300">
 
 To exit the chat function simply press the X on the top right of the screen.
 
 # LED and Screen Usage
 
-<img src="OLED1.png" alt="GUI" width="500">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED1.png" alt="GUI" width="500">
 
 On the top front are three LED's as well as one display and three buttons.  The Green LED indicates that the power is turned on.  The Orange LED presently indicates that the WiFi signal is transmitting.  The Red LED is lit during battery charging and will be extinguished when the battery if fully charged.  Additionally the RED LED may blink to indicate a problem with the battery when the unit is charging or turned on.
 
 The OLED screen on power up will show the ConnectBox logo for a short period of time then turn off.  Of the three buttons, ˄ up, ˅ down, ∧˩ return, only the up and down buttons are used at this time.  Pressing the up button for 1 second will bring up the first status screen:
 
-<img src="OLED2.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED2.png" alt="GUI" width="300">
 
 This screen shows the number of connected people, the version number of firmware in the unit, the battery charge level and the CPU temperature.   **NOTE** : The CPU temperature should never exceed 70˚C.
 
 Pressing the up button again for 1 second with the first status screen on, will bring up the second status screen:
 
-<img src="OLED3.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED3.png" alt="GUI" width="300">
 
 This screen shows more detailed information on the battery.  Including the current battery power level in %, the voltage output from the battery, the temperature inside the case and the amount of current being drawn out of the battery.  Note that the battery is a 3400 mAh battery or a 3000 mAh battery depending on model.
 
@@ -169,13 +172,13 @@ At any time after the first screen pressing the down button for 1 second will go
 
 Pressing the up button again for 1 second with the second status screen on, will bring up the third status screen:
 
-<img src="OLED4.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED4.png" alt="GUI" width="300">
 
 This screen again shows the number of people connected (or devices), the amount of time in hours : minutes : seconds since the unit was started or rebooted.  And the total amount of WiFi traffic transmitted and received.
 
 Pressing the up button again for 1 second with the third status screen on, will bring up the fourth status screen:
 
-<img src="OLED5.png" alt="GUI" width="300">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED5.png" alt="GUI" width="300">
 
 This screen shows the most popular downloaded or viewed files on the unit.  The screen will allow you to scroll up/down the list with the most popular on the top by using the up and down buttons.  If there is an `empty` clipboard symbol, there are no statistics to view.  The p marker shows which page of the report you are looking at.  Using the enter button on any particular listing line will give you additional information on the file usage.
 

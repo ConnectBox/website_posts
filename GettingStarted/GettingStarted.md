@@ -4,7 +4,6 @@
 
 [DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V4.pdf)
 
-
 This ConnectBox is nearly ready to go already. Just a few things that you need to do first to make the end user experience useful.
 
 ## Initial Administration / Setup
@@ -21,11 +20,10 @@ _Note: if you are connecting from a mobile device it may &#39;validate the inter
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/first_run.png" alt="First Run" width="300">
 
-
 1. Navigate to the Administration area: [http://connectbox/admin](http://connectbox/admin) (or press the cog icon on the bottom right of the screen) and login with the default Connectbox credentials (username and password are casesensitive):
 
-  - username: admin
-  - password: connectbox
+- username: admin
+- password: connectbox
 
 _Recommended_: Change the password for the Administration area. Go to the Configure Menu and select Password. Enter a new password and press submit. When you next try to enter the admin portal of the Connectbox, you will be prompted to login again. Use the new password when this happens.
 
@@ -179,6 +177,12 @@ This screen again shows the number of people connected (or devices), the amount 
 Pressing the up button again for 1 second with the third status screen on, will bring up the fourth status screen:
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED5.png" alt="GUI" width="300">
+
+This screen shows the amount of CPU usage in %, the amount of RAM memory usage in % and the amount of USB storage used in %
+
+Pressing the up button again for 1 second with the fourth screen on, will bring up the fifth and final status screen:
+
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED6.png" alt="GUI" width="300">
 
 This screen shows the most popular downloaded or viewed files on the unit.  The screen will allow you to scroll up/down the list with the most popular on the top by using the up and down buttons.  If there is an `empty` clipboard symbol, there are no statistics to view.  The p marker shows which page of the report you are looking at.  Using the enter button on any particular listing line will give you additional information on the file usage.
 

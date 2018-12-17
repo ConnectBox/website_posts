@@ -1,6 +1,8 @@
 # Obtaining a ConnectBox
 
-## <span style="color:Sienna">Currently, ConnectBoxes are being distributed in a limited 100-unit release to our partners.  Further information about availability will follow about how to purchase a complete unit around December 2017. Please use the About/Contact Page to send us an email for announcements.</span>
+## <span style="color:Sienna">Version 2 of the ConnectBoxes are available to order!  With the changes that we made to the unit between version 1 and version 2 (e.g., adding in an OLED display) and the price for batteries also significantly increasing, the price for the units is now at $70 each (plus shipping).
+
+Please send an email to: connectbox@globaltech.team for further information.</span>
 ___
 
 <span style="color:SteelBlue">The following articles describe the key functions of constructing, administering, and further developing the ConnectBoxes.</span>

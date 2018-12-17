@@ -31,12 +31,18 @@ This will require a 16GB micro-sD card and will fill it with 2 partitions, a fat
 ### Connecting to your ConnectBox via SSH
 By default, your ConnectBox has SSH disabled over the LAN port.  It is relatively simple to turn it on.  Essentially, you need to create a specifically named directory and a file in that directory on your external USB stick.  Have it inserted, then boot the device.  The ConnectBox will automatically see those items and thereby enable SSH support over the LAN.  The folder must be named:
  
-`.connectbox` (in all lowercase and with the preceeding period)
+**.connectbox** (in all lowercase and with the preceeding period)
 
-Inside that folder, you will need to put a file called: `enable-ssh` again without the quotes.  The file can contain information or be blank.
+Inside that folder, you will need to put a file called: **enable-ssh** again without the quotes.  The file can contain information or be blank.
 
-Under *Windows*, the Operating System won't let you make folders that start with a period so you need to do something a bit different.  Open up a Command Prompt, (hold down the `WINDOWS-R` keys and a window will pop open. Type `cmd` into it and hit the OK button).  From the terminal window, go to your USB drive by typing in the following:
+Under *Windows*, the Operating System won't let you make folders that start with a period so you need to do something a bit different.  Open up a Command Prompt, (hold down the **WINDOWS-R** keys and a window will pop open. Type **cmd** into it and hit the OK button).  From the terminal window, go to your USB drive by typing in the following:
 
-`D:` where D: is the drive letter of your external USB stick.
+**D:** where D: is the drive letter of your external USB stick.
 
-Then type `mkdir .connectbox` which will allow you to make that special folder with the period in the front of the name.  Follow this with the command `cd .connectbox` to move inside of that folder.  Then make the file with the command `type nul >enable-ssh`.  That is all there is to doing that under Windows.
+Then type **mkdir .connectbox** which will allow you to make that special folder with the period in the front of the name.  Follow this with the command **cd .connectbox** to move inside of that folder.  Then make the file with the command **type nul >enable-ssh**.  That is all there is to doing that under Windows.
+
+SSH Login Credentials:
+
+_username:_ **root**
+
+_password:_ **connectbox**

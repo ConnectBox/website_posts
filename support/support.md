@@ -39,4 +39,4 @@ Under *Windows*, the Operating System won't let you make folders that start with
 
 `D:` where D: is the drive letter of your external USB stick.
 
-Then type `mkdir .connectbox` which will allow you to make that special folder with the period in the front of the name.  Follow this with the command `cd .connectbox` to move inside of that folder.  Then make the file with the command `copy /b enable-ssh`.  That is all there is to doing that under Windows.
+Then type `mkdir .connectbox` which will allow you to make that special folder with the period in the front of the name.  Follow this with the command `cd .connectbox` to move inside of that folder.  Then make the file with the command `type nul >enable-ssh`.  That is all there is to doing that under Windows.

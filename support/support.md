@@ -46,3 +46,82 @@ SSH Login Credentials:
 _username:_ **root**
 
 _password:_ **connectbox**
+
+### Enabling PHP for your ConnectBox
+
+The ConnectBox software image does not come with PHP installed by default. However, with a few commands, you can enable PHP to work with your files on your external USB stick.  Follow the instructions below:
+
+* Using the above described method, connect to your ConnectBox via SSH to get a BASH console and that your ConnectBox has internet access.  Easiest way to do this is to connect an Ethernet cable from your router to the ConnectBox's LAN port.  Depending on the model of ConnectBox that you have, you may need to take the case off to get to the LAN port.
+* The first thing we want to do is update the code repositories for obtaining the PHP libraries.  From the commandline, type in the following: `apt update` and hit Enter on your keyboard.  Multiple lines will scroll by as the operating system updates itself.  Once it returns waiting at the command prompt, you can proceed with the next step.
+* We now want to install the current PHP libraries.  We do that by typing in the following and hitting Enter: `apt install -y php-fpm`  This will take a few minutes to complete.
+* Once PHP has been installed to the system, we need to inform the webserver to start to use it.  We'll need to update a config file with new information for the system to know how to use PHP.  Type the following at the commandline and press Enter: `nano /etc/nginx/sites-available/connectbox_static-site.conf`  An editor will show up with the contents of the configuration file. We want to make the following two changes to the file as shown in green:
+
+<pre>
+server {
+    listen 80;
+    server_name $hostname;
+    root /media/usb0;
+    index <span style="color:green">index.php</span> index.html index.htm;
+    error_page 404 /index.html;
+    access_log /var/log/connectbox/connectbox-access.log;
+    error_log /var/log/connectbox/connectbox-error.log error;
+    rewrite_log on;
+
+location /chat {
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header Host $http_host;
+  proxy_redirect off;
+  proxy_pass http://127.0.0.1:5000/chat;
+  # Never cache
+  expires -1;
+}
+
+location /admin/api {
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header Host $http_host;
+  proxy_redirect off;
+  proxy_pass http://127.0.0.1:5000/admin/api;
+  # Never cache
+  expires -1;
+}
+
+location /__connectbox_assets__ {
+  alias /var/www/connectbox/connectbox_default;
+  location ~ \.json$ {
+    expires -1;
+  }
+}
+
+
+    # Admin interface
+    location /admin {
+      alias /var/www/connectbox/connectbox_default;
+      try_files $uri /admin/index.html;
+    }
+    <span style="color:green">
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+    }
+    </span>
+}
+</pre>
+
+Use **CTRL-X** followed by **Y** to save the changes to the file and exit the editor.
+
+
+* We'll need to create a test file to see if PHP will work correctly. Type the following into the commandline to create a new file on the root folder of the USB drive: `nano /media/usb0/hello.php` and once the editor opens up to a blank page, type in the following:
+
+```
+<?php
+    print("Hello World");
+?>
+```
+
+Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exit the editor.
+
+* Final step at the console line is to restart the websever.  The command to do this is: `systemctl reload nginx`
+
+* Now that PHP is installed, we need to tell the ConnectBox to run using the Static Web Page mode instead of the default Icon-Only method that just serves up file listings.  We do that by logging into the Admin Panel.  Connect up your phone to your ConnectBox and once connected, type `http://connectbox/admin` into the address bar of your browser.  Log in using the admin password (defaults to `connectbox`).  Select the `Configuration` menu item, followed by `Web Server`, then `Static site configuration`. Toggle the buttons so that `Enabled` is selected followed by clicking on the `Update` button.  The device will reconfure itself so that it will now serve up webpages instead of just presenting files.
+* Test that the changes worked by typing `http://connectbox/hello.php` which will display "Hello World" on the screen. If your device tries to download the file instead of rendering it, go back and ensure that the Static site configuration is enabled.
+* You are now all set to use PHP in your web applications.

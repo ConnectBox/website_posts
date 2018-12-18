@@ -64,7 +64,7 @@ server {
     listen 80;
     server_name $hostname;
     root /media/usb0;
-    index <span style="color:green">index.php</span> index.html index.htm;
+    index <span style="color:green"><b>index.php</b></span> index.html index.htm;
     error_page 404 /index.html;
     access_log /var/log/connectbox/connectbox-access.log;
     error_log /var/log/connectbox/connectbox-error.log error;
@@ -101,12 +101,12 @@ location /__connectbox_assets__ {
       alias /var/www/connectbox/connectbox_default;
       try_files $uri /admin/index.html;
     }
-    <span style="color:green">
+    <span style="color:green"><b>
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
     }
-    </span>
+    </b></span>
 }
 </pre>
 

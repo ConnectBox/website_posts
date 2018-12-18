@@ -11,9 +11,12 @@ This is the Support page.
 ## Add an issue to GitHub:
 [ConnectBox Github Project](https://github.com/ConnectBox/connectbox-pi/issues "GitHub Project Issues")
 
-## Frequently Asked Questions (FAQ):
+<hr />
+<hr />
 
-### Reset your ConnectBox back to "factory condition"
+# Frequently Asked Questions (FAQ):
+
+## Reset your ConnectBox back to "factory condition"
 There are a few steps (a few more than we’d like to be honest, but we’re working on the update mechanism).
 
 1. Download the latest release image from GitHub: https://github.com/ConnectBox/connectbox-pi/releases/ Pick the latest version of the *Release* branch and not the *Developer* version.
@@ -28,7 +31,7 @@ If you want to use a master connectbox-pi release 20180122 with a 10GB fat32 for
 https://emailnet-my.sharepoint.com/:u:/g/personal/kirk_wilson_om_org/Eb2HpKKxcF1Fn8qZar-zvEABh8vPpKYERoSiPsTaLvKtHw?e=AiAlPh
 This will require a 16GB micro-sD card and will fill it with 2 partitions, a fat32 and an ext4 partition for booting the ConnectBox OS.
 
-### Connecting to your ConnectBox via SSH
+## Connecting to your ConnectBox via SSH
 By default, your ConnectBox has SSH disabled over the LAN port.  It is relatively simple to turn it on.  Essentially, you need to create a specifically named directory and a file in that directory on your external USB stick.  Have it inserted, then boot the device.  The ConnectBox will automatically see those items and thereby enable SSH support over the LAN.  The folder must be named:
  
 **.connectbox** (in all lowercase and with the preceeding period)
@@ -47,7 +50,7 @@ _username:_ **root**
 
 _password:_ **connectbox**
 
-### Enabling PHP for your ConnectBox
+## Enabling PHP for your ConnectBox
 
 The ConnectBox software image does not come with PHP installed by default. However, with a few commands, you can enable PHP to work with your files on your external USB stick.  Follow the instructions below:
 

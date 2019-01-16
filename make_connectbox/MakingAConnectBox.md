@@ -1,6 +1,6 @@
 # Obtaining a ConnectBox
 
-## <span style="color:Sienna">Version 2 of the ConnectBoxes are available to order!  With the changes that we made to the unit between version 1 and version 2 (e.g., adding in an OLED display) and the price for batteries also significantly increasing, the price for the units is now at $70 each (plus shipping).
+## <span style="color:Sienna">ConnectBoxes are available to order!  Units are priced at $70 each (plus shipping).
 
 Please send an email to: connectbox@globaltech.team for further information.</span>
 ___

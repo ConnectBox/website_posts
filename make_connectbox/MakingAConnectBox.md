@@ -2,7 +2,7 @@
 
 ## <span style="color:Sienna">ConnectBoxes are available to order!  Units are priced at $70 each (plus shipping).
 
-Please send an email to: connectbox@globaltech.team for further information.</span>
+Please send an email to: help@connectbox.technology for further information.</span>
 ___
 
 <span style="color:SteelBlue">The following articles describe the key functions of constructing, administering, and further developing the ConnectBoxes.</span>

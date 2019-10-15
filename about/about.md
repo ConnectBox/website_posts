@@ -1,6 +1,6 @@
 # About/Contact
 
-For more information about the project, send an email to: <connectbox@globaltech.team>
+For more information about the project, send an email to: <help@connectbox.technology>
 ___
 
 ## Team Members:
@@ -14,8 +14,8 @@ ___
 
 ## Partners:
 
-[![Global Tech Team](https://raw.githubusercontent.com/ConnectBox/website_posts/master/about/GlobalTechTeam_200.png)](http://globaltech.team/)
 [![OM](https://raw.githubusercontent.com/ConnectBox/website_posts/master/about/om_200.png?raw=true)](http://om.org/)
+[![Global Tech Team](https://raw.githubusercontent.com/ConnectBox/website_posts/master/about/GlobalTechTeam_200.png)](http://globaltech.team/)
 
 ## Join the team:
 

@@ -1,6 +1,6 @@
 # Getting Started Guide to Your ConnectBox
 
-<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/cb_icon.png" alt="ConnectBox" width="150">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED1.png" alt="ConnectBox" width="468">
 
 [DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V6.pdf)
 

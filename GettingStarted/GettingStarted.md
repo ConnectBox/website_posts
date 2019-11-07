@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/cb_icon.png" alt="ConnectBox" width="150">
 
-[DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V4.pdf)
+[DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V6.pdf)
 
 This ConnectBox is nearly ready to go already. Just a few things that you need to do first to make the end user experience useful.
 
@@ -12,7 +12,7 @@ This ConnectBox is nearly ready to go already. Just a few things that you need t
 
 - Your ConnectBox comes with an internal lithium-ion battery. To charge the battery, you'll need to connect up a 1A or greater microUSB charger like are found with many cell phones. From charging from an empty to full battery, expect it to take around 2 - 5 hours. Your ConnectBox has built-in low battery protection which prevents the battery from going into deep discharge.
 
-PLEASE FULLY CHARGE YOUR CONNECTBOX BEFORE THE FIRST USE
+<strong>PLEASE FULLY CHARGE YOUR CONNECTBOX BEFORE THE FIRST USE</strong>
 
 - With the microUSB charger plugged in or with a relatively full battery, turn your unit on using the switch on the side of the unit. Allow a **minute** or two to pass before using a wireless device to locateand join the default wireless network called _ConnectBox - Free__Media_
 
@@ -56,12 +56,12 @@ If you perhaps would like to share with your connected users some sort of banner
 
 Brought to you by: **Global Tech Team**
 
-+1-800-555-1212 _(USA)_
++1-720-515-4757 _(USA)_
 
 Using the html format of:
 
 ```
-<p>Brought to you by: <span style="color: #008000;"><strong>Global Tech Team</strong></span></p><p>+1-800-555-1212 <em>(USA)</em></p>
+<p>Brought to you by: <span style="color: #008000;"><strong>Global Tech Team</strong></span></p><p>+1-720-515-4757 <em>(USA)</em></p>
 ```
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/admin6.png" alt="Admin Area" width="300">
@@ -126,6 +126,8 @@ Some samples of the file icons are:
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/icons.png" alt="GUI">
 
+A second methodology to add content to a connect box is to use the internal storage of the device.  The micro-flash drive internal to the unit also can store and contain data.  To add data to this drive, you will need to have data on a USB flash key that can be uploaded to the internal drive.  This is covered under LED Screen Usage.
+
 # Using the Chat functionality
 
 Built into the main function of the Connectbox is the ability for users connected to the box to converse with one another. This is entered by tapping the chat icon on the top right of the screen:
@@ -150,11 +152,11 @@ To exit the chat function simply press the X on the top right of the screen.
 
 # LED and Screen Usage
 
-<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED1.png" alt="GUI" width="500">
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/closeup.png" alt="GUI" width="500">
 
-On the top front are three LED's as well as one display and three buttons.  The Green LED indicates that the power is turned on.  The Orange LED presently indicates that the WiFi signal is transmitting.  The Red LED is lit during battery charging and will be extinguished when the battery if fully charged.  Additionally the RED LED may blink to indicate a problem with the battery when the unit is charging or turned on.
+On the top front are three LED's as well as one display and two buttons.  The Green LED indicates that the power is turned on.  The Orange LED presently indicates that the WiFi signal is transmitting.  The Red LED is lit during battery charging and will be extinguished when the battery if fully charged.  Additionally the RED LED may blink to indicate a problem with the battery when the unit is charging or turned on.
 
-The OLED screen on power up will show the ConnectBox logo for a short period of time then turn off.  Of the three buttons, ˄ up, ˅ down, ∧˩ return, only the up and down buttons are used at this time.  Pressing the up button for 1 second will bring up the first status screen:
+The OLED screen on power up will show the ConnectBox logo for a short period of time then turn off.  Of the two buttons, ˄ up, ˅ down pressing the up button for 1 second will bring up the first status screen:
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED2.png" alt="GUI" width="300">
 
@@ -164,7 +166,7 @@ Pressing the up button again for 1 second with the first status screen on, will 
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED3.png" alt="GUI" width="300">
 
-This screen shows more detailed information on the battery.  Including the current battery power level in %, the voltage output from the battery, the temperature inside the case and the amount of current being drawn out of the battery.  Note that the battery is a 3400 mAh battery or a 3000 mAh battery depending on model.
+This screen shows more detailed information on the battery.  Including the current battery power level in %, the voltage output from the battery, the temperature inside the case and the amount of current being drawn out of the battery.  Note that the battery is a 6000 mAh battery or a 3000 mAh battery depending on model.
 
 At any time after the first screen pressing the down button for 1 second will go back a screen.
 
@@ -180,13 +182,24 @@ Pressing the up button again for 1 second with the third status screen on, will 
 
 This screen shows the amount of CPU usage in %, the amount of RAM memory usage in % and the amount of USB storage used in %
 
-Pressing the up button again for 1 second with the fourth screen on, will bring up the fifth and final status screen:
+Pressing the up button again for 1 second with the fourth screen on, will bring up the fifth status screen:
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED6.png" alt="GUI" width="300">
 
-This screen shows the most popular downloaded or viewed files on the unit.  The screen will allow you to scroll up/down the list with the most popular on the top by using the up and down buttons.  If there is an `empty` clipboard symbol, there are no statistics to view.  The p marker shows which page of the report you are looking at.  Using the enter button on any particular listing line will give you additional information on the file usage.
+This screen shows the most popular downloaded or viewed files on the unit.  The screen will allow you to scroll up/down the list with the most popular on the top by using the up and down buttons.  If there is an `empty` clipboard symbol, there are no statistics to view.  The p marker shows which page of the report you are looking at.  
+
+Pressing the button again for 1 second with the fifth screen up will bring you to the Sixth and final status screen. 
+
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED7.png" alt="GUI" width="300">
+
+This screen shows the most popular downloaded or viewed files on the unit by name.  The screen will allow you to scroll up/down the list with the most popular on the top by using the up and down buttons.  If there is an ‘empty’ clipboard symbol, there are no statistics to view.  The p marker shows which page of the report you are looking at.  Using the enter button on any particular listing line will give you additional information on the file usage.
 
 If no buttons are pressed after 10 seconds, then the screen will go black again to conserve battery power.  Pressing the Up button for more than 1 second will again show the first screen.
+
+If at the number 6th screen you push and hold both left and right buttons for more than 5 seconds you will open a file copy menu which is explained in more detail in the following block diagram:
+ 
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED8.png" alt="GUI" width="2502">
+
 
 This is an open source project and we appreciate your feedback and suggestions. Please visit: [http://feedback.connectbox.technology/](http://feedback.connectbox.technology/) and leave your comments. Anything posted here will automatically go directly to the developers for consideration
 

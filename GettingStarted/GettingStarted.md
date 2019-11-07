@@ -197,7 +197,8 @@ This screen shows the most popular downloaded or viewed files on the unit by nam
 If no buttons are pressed after 10 seconds, then the screen will go black again to conserve battery power.  Pressing the Up button for more than 1 second will again show the first screen.
 
 If at the number 6th screen you push and hold both left and right buttons for more than 5 seconds you will open a file copy menu which is explained in more detail in the following block diagram:
- 
+
+
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED8.png" alt="GUI" width="2502">
 
 

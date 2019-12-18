@@ -44,7 +44,7 @@ The amazing thing about a ConnectBox is that it can be built for around $70 in h
 + Switches: Power On/Off
 + Power: 
     + Internal 6000mAh Rechargeable 3.7 V Li-Ion Battery (59 grams)
-    + 5VDC/1.0A external micro-USB connection
+    + 5VDC/1-2A external micro-USB connection
 + Usable Battery Life: 6-10 hours on a full charge (~560 ma/H or ~2 W/H) Charging Time: 4 hours’ maximum from empty
 + Dimensions: 3.9 x 3.0 x 1.2 in (98 x 75 x 30 mm)
 + Wireless Standards: IEEE 802.11n (b/g/n)

@@ -20,11 +20,19 @@ This ConnectBox is nearly ready to go already. Just a few things that you need t
 
 You will know when it is available by the yellow LED turning on. (Note: that if you charge your unit and run the unit simultaneously in a hot climate it may cause a red flashing indicator of high temperature internal to the unit.)
 
+<<<<<<< HEAD
+_Note: if you are connecting from a mobile device it may &#39;validate the internet connectivity and/or check if a login is required for the network join&#39;. In this case it may show a web browser window that say&#39;s to connect to_ [http://connectbox](http://connectbox/) or [http://wi_fi](htpp://wi_fi/)_. In some cases you may need to go to the &#39;more&#39; menu and &#39;keep the connection&#39; – close the default browser and re-open a web browser on the device and enter_ [http://connectbox](http://connectbox/) or [http://wi_fi](http://wi_fi) _in the URL window. This should open the default front page of the Connectbox._
+
+<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect1.jpg" alt="WebConnect1" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect2.jpg" alt="WebConnect2" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect3.jpg" alt="WebConnect3" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect4.jpg" alt="WebConnect4" width="300">
+
+Switching between views showing what you should do next.  When you’re ready click OK.  To use the ConnectBox you need to open up a browser on your device (native browser, chrome, safari, firefox, etc.)  and type in the web address of [http://wi.fi](http://wi.fi) which will then result in seeing the main ConnectBox window.  If there has not been any data loaded onto the device it will only show the single README.txt file as:
+=======
 _Note: if you are connecting from a mobile device it may &#39;validate the internet connectivity and/or check if a login is required for the network join&#39;. In this case it may show a web browser window that say&#39;s to connect to_ [http://connectbox](http://connectbox/) or [https://wi_fi](htpps://wi_fi/)_. In some cases you may need to go to the &#39;more&#39; menu and &#39;keep the connection&#39; – close the default browser and re-open a web browser on the device and enter_ [http://connectbox](http://connectbox/) or [http://wi_fi](http://wi_fi) _in the URL window. This should open the default front page of the Connectbox._
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect1.jpg" alt="WebConnect1" width="300""> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect2.jpg" alt="WebConnect2" width="300""> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect3.jpg" alt="WebConnect3" width="300""> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect4.jpg" alt="WebConnect4" width="300"">
 
 Switching between views showing what you should do next.  When you’re ready click OK.  To use the ConnectBox you need to open up a browser on your device (native browser, chrome, safari, firefox, etc.)  and type in the web address of http://wi.fi which will then result in seeing the main ConnectBox window.  If there has not been any data loaded onto the device it will only show the single README.txt file as:
+>>>>>>> 5bf6562bb9d592b24a1c6c54b233bd8ee2862c4b
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/first_run.png" alt="First Run" width="300">
 

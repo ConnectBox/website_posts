@@ -150,8 +150,13 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
   * `nano /etc/nginx/sites-available/connectbox_static-site.conf` 
     * Modify this existing line to add in `index.php` before the other index types
     <pre>index index.php index.html index.htm;</pre>
+	
+	You also need to modify the root file system to:
+	<pre> root /var/www/html/wordpress; </pre>
+	
     Add this whole section before the end of the last closing } character
-    <pre>
+    
+	<pre>
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;

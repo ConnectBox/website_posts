@@ -134,19 +134,19 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
   * `sudo systemctl enable mariadb.service`
   * `mysql_secure_installation`
     * `Enter current password for root (enter for none):`  <<===Just hit Enter here
-    * `Set root password (Y/n)`  <<===Add in a password here
+    * `Set root password (Y/n)`  <<===Add in a password here by replying Y
     * `Remove anonymous users (Y/n)`  <<===Just hit Enter here
     * `Disallow root login remotely? (Y/n)`  <<===Just hit Enter here
     * `Remove test database and access to it (Y/n)`  <<===Just hit Enter here
     * `Reload privilege tables now? (Y/n)`  <<===Just hit Enter here
   * `mysql -u root -p`
-    
+								<<===When asked use the password set above
     From within the MySQL command prompt, type in these commands to create a database for WordPress and a user
     * `CREATE DATABASE connectbox DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;`
-    * `GRANT ALL ON connectbox.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';`
+    * `GRANT ALL ON connectbox.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';`  <<=== note that if you change password then it must be changed below as well in wp-config.php
     * `FLUSH PRIVILEGES;`
     * `EXIT;`  <<===Exits you back to the regular console prompt
-  * `apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-cli`
+  * `apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-cli php-imagick`
   * `nano /etc/nginx/sites-available/connectbox_static-site.conf` 
     * Modify this existing line to add in `index.php` before the other index types
     <pre>index index.php index.html index.htm;</pre>
@@ -173,9 +173,9 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
   * `tar xzvf latest.tar.gz -C /var/www/html`
   * `sudo chown -R www-data:/var/www/html/wordpress`
   * `sudo systemctl start mariadb.service`
-  * `suod systemctl enable mariadb.service`
+  * `sudo systemctl enable mariadb.service`
   * `cd /var/www/html/wordpress`
-  * `cp wp-config-sample.php wp-config.php
+  * `cp wp-config-sample.php wp-config.php`
   * `nano wp-config.php`
     
     Change out the following lines:
@@ -186,7 +186,7 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
     define('DB_USER', 'wordpressuser');
     
     /** MySQL database password */
-    define('DB_PASSWORD', 'password');
+    define('DB_PASSWORD', 'password');  <<=== note that if you change password then it must be changed below as well in wp-config.php
     </pre>
     Add in the below line somewhere in the config file:
     <pre>define('FS_METHOD', 'direct');</pre>
@@ -198,3 +198,53 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
 * Now that everything is installed, we need to tell the ConnectBox to run using the Static Web Page mode instead of the default Icon-Only method that just serves up file listings.  We do that by logging into the Admin Panel.  Connect up your phone to your ConnectBox and once connected, type `http://connectbox/admin` into the address bar of your browser.  Log in using the admin password (defaults to `connectbox`).  Select the `Configuration` menu item, followed by `Web Server`, then `Static site configuration`. Toggle the buttons so that `Enabled` is selected followed by clicking on the `Update` button.  
 * The device will reconfure itself so that it will now serve up webpages instead of just presenting files.  Wait around 30 seconds for the device to update itself and get organized.  After that, log back into the regular ConnectBox home page (http://connectbox) and if all went well, you will see the installer for WordPress.
 
+With WordPress running you may need to create a micro-USB based swap file to enable ram to not overload.  To do this, you can see what the current swap file situation is:
+
+  * `sudo swapon --show`
+  
+This will show the current swap file.  By default there is a ram based swap file /dev/zram1 partition about 119M  To add a second swap file of 1GB do the following
+
+  * `sudo fallocate -l 1G /swapfile`
+  * `sudo chmod 600 /swapfile`
+  * `sudo mkswap /swapfile`
+  * `sudo swapon /swapfile`
+
+This now creates the swapfile and enables it.  to make the change permanent we need to edit /etc/fstab as follows:
+
+  * `sudo nano /etc/fstab`
+  
+Paste the following line into the file:
+
+  * ` /swapfile swap swap defaults 0 0`
+  
+Then write the file with ^O then exit with ^X
+
+To verify the change check the swap situation now with:
+
+  * `sudo swapon --show`
+  
+  You should now see something like:
+ NAME       TYPE        SIZE USED PRIO
+/swapfile  file       1024M   0B   -2
+/dev/zram1 partition 119.6M 7.3M    5
+
+The 'Swappiness' of the memory now needs to be adjusted since
+we were using 100% ram before lets lower the value:
+
+  * `sudo sysctl vm.swappiness=60`
+
+and then to make this persistant let edit the /etc/sysctl.conf file:
+
+  * `sudo nano /etc/sysctl.conf`
+
+At the end of the file you will find the line 'vm.swappiness=100' change this to 'vm.swappiness=60'
+
+Then write the file with ^O and then exit ^X
+
+you can check the current value of 'Swappiness' with 
+
+  * `cat /proc/sys/vm/swappiness`
+
+and the output should be 60
+
+  

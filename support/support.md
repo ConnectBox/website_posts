@@ -25,11 +25,6 @@ There are a few steps (a few more than we’d like to be honest, but we’re wor
 4. Burn the image to the microSD card using Etcher (Etcher will burn the image file that you downloaded without requiring decompression)
 5. Pop it back in the ConnectBox and start it.
 
-Note: You won’t be able to use the internal storage on the microSD for data with this process, but if you’re using external USB storage, that won't be a problem. There is a process that allows you to dual partition the internal microSD for use both for the OS and for your media, but it’s for advanced users: https://connectbox.technology/wp/utilizing-your-existing-microsd-boot-card-for-your-media-files/
-
-If you want to use a master connectbox-pi release 20180122 with a 10GB fat32 format partition on the start of the micro-sD then in step #1 above download from:
-https://emailnet-my.sharepoint.com/:u:/g/personal/kirk_wilson_om_org/Eb2HpKKxcF1Fn8qZar-zvEABh8vPpKYERoSiPsTaLvKtHw?e=AiAlPh
-This will require a 16GB micro-sD card and will fill it with 2 partitions, a fat32 and an ext4 partition for booting the ConnectBox OS.
 
 ## Connecting to your ConnectBox via SSH
 By default, your ConnectBox has SSH disabled over the LAN port.  It is relatively simple to turn it on.  Essentially, you need to create a specifically named directory and a file in that directory on your external USB stick.  Have it inserted, then boot the device.  The ConnectBox will automatically see those items and thereby enable SSH support over the LAN.  The folder must be named:
@@ -50,7 +45,7 @@ _username:_ **root**
 
 _password:_ **connectbox**
 
-## Enabling PHP for your ConnectBox
+## Enabling PHP for your ConnectBox web Server
 
 The ConnectBox software image does not come with PHP installed by default. However, with a few commands, you can enable PHP to work with your files on your external USB stick.  Follow the instructions below:
 
@@ -134,7 +129,9 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
 * Using the above described method, connect to your ConnectBox via SSH to get a BASH console and that your ConnectBox has internet access.  Easiest way to do this is to connect an Ethernet cable from your router to the ConnectBox's LAN port.  Depending on the model of ConnectBox that you have, you may need to take the case off to get to the LAN port.
 * Enter in the following commands at the console line:
   * `apt-get update`
-  * `apt install -y mysql-server`
+  * `apt install -y mariadb-server`
+  * `sudo systemctl start mariadb.service`
+  * `sudo systemctl enable mariadb.service`
   * `mysql_secure_installation`
     * `Enter current password for root (enter for none):`  <<===Just hit Enter here
     * `Set root password (Y/n)`  <<===Add in a password here
@@ -149,7 +146,7 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
     * `GRANT ALL ON connectbox.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';`
     * `FLUSH PRIVILEGES;`
     * `EXIT;`  <<===Exits you back to the regular console prompt
-  * `apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip`
+  * `apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-cli`
   * `nano /etc/nginx/sites-available/connectbox_static-site.conf` 
     * Modify this existing line to add in `index.php` before the other index types
     <pre>index index.php index.html index.htm;</pre>
@@ -168,21 +165,17 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
     }</pre>
   * `systemctl reload nginx`
   
-  We not need to reformat our USB drive from FAT/FAT32 to EXT4 format so that it supports the ability to assign permissions to the files located on it.
-
-  * `umount /dev/sda1`
-  * `mkfs.ext4 /dev/sda1`
-  * `mount -t ext4 /dev/sda1 /media/usb0/`
-
+  
   Lastly, we install the latest version of WordPress onto the USB drive.
 
   * `cd /tmp`
   * `curl -LO https://wordpress.org/latest.tar.gz`
-  * `tar xzvf latest.tar.gz`
-  * `cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php`
-  * `cp -a /tmp/wordpress/. /media/usb0/`
-  * `chown -R www-data:www-data /media/usb0/`
-  * `cd /media/usb0/`
+  * `tar xzvf latest.tar.gz -C /var/www/html`
+  * `sudo chown -R www-data:/var/www/html/wordpress`
+  * `sudo systemctl start mariadb.service`
+  * `suod systemctl enable mariadb.service`
+  * `cd /var/www/html/wordpress`
+  * `cp wp-config-sample.php wp-config.php
   * `nano wp-config.php`
     
     Change out the following lines:
@@ -197,7 +190,11 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
     </pre>
     Add in the below line somewhere in the config file:
     <pre>define('FS_METHOD', 'direct');</pre>
+	
+	Write out the file and exit nano
+	
   * `systemctl reload nginx`
 
 * Now that everything is installed, we need to tell the ConnectBox to run using the Static Web Page mode instead of the default Icon-Only method that just serves up file listings.  We do that by logging into the Admin Panel.  Connect up your phone to your ConnectBox and once connected, type `http://connectbox/admin` into the address bar of your browser.  Log in using the admin password (defaults to `connectbox`).  Select the `Configuration` menu item, followed by `Web Server`, then `Static site configuration`. Toggle the buttons so that `Enabled` is selected followed by clicking on the `Update` button.  
 * The device will reconfure itself so that it will now serve up webpages instead of just presenting files.  Wait around 30 seconds for the device to update itself and get organized.  After that, log back into the regular ConnectBox home page (http://connectbox) and if all went well, you will see the installer for WordPress.
+

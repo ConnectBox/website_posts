@@ -3,7 +3,7 @@
 This is the Support page.
 
 ## Send Feedback to the Developers: 
-[ConnectBox Feedback Form](http://http://geodirk-001-site1.btempurl.com/ "Feedback Page")
+Send an email to: <help@connectbox.technology>
 
 ## Google Groups Forum / Mailing List:
 [ConnectBox Google Groups Forum](https://groups.google.com/d/forum/connectbox "ConnectBox Google Groups Forum")

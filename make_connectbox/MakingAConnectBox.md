@@ -13,7 +13,7 @@ See [Deployment Docs](https://github.com/ConnectBox/connectbox-pi/blob/master/do
 
 # Building a ConnectBox image
 
-See [Prepare a release - 022621.pdf](https://github.com/ConnectBox/making-a-connectbox/blob/main/Prepare a release - 022621.pdf)
+See [Prepare a release - 022621.pdf](https://github.com/ConnectBox/making-a-connectbox/blob/main/README.md)
 
 # Connectbox setup and administration
 

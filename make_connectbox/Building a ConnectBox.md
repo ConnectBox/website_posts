@@ -1,12 +1,11 @@
 <h2>The following document explains how to build the firmware for a ConnectBox.</h2>
-<h2>This can be done on a Windows machine with VirtualBox or on a Mac or on a Raspberry Pi 3+ or 4</h2>
-<a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/making_an_image.md">Makiing A ConnectBox Software Image</a>
+<h2>This can be done on  a Windows machine with VirtualBox running Linux or on a Mac or a Raspberry Pi 3+ r 4</h2>
 
+<a href="https://github.com/ConnectBox/connectbox-pi/blob/master/doc/making_an_image.md">Makind A ConnectBox Software Image</a>
 &nbsp;
-After making the firmware, you need the hardware configured.  There are two basic styles:
+After making the firmware, you need to have hardware configured for the firmware.
+Hardware made with a NEO Pi from FriendlyArm usually uses a RTL8812au WiFi dongle to provide the WiFi connection.  Other WiFi modules can be used as well if they are supported by the Operating system or you install the device driver into the OS.  Battery units use a custom PCB that contains the RTL8812AU WiFi module as well as battery management hardware to charge/manage the charge level as well as a 0.98" I2C display and 2 buttons.  You can find the circuit diagram under the Github repository.  Additionally, you can 3D Print your case, for large volume production we have designed a battery version case to contain the custom PCB and the NEO Pi processsor.
 
-Hardware made with the NEO Pi from FriendlyArm with a customized PCB and case that accommodates a 6200maH battery and has a built in RTL8812au WiFi chip or you can build your design using the NEO Pi and another WiFi chip without any battery.
+Secondlyyou can build the firmware for a Raspberry Pi.  This includes the Model Zero through the Model 4.  When using the Raspberry Pi, there is a limit of how many users can use the built in WiFi port.  We continue to recommend that you use an external WiFi module to provide better connection for users.  If an external WiFi module  is used then the internal module can be used for connection to a WiFi Access Point for internet connectivity.  This will NOT be passed on (bridged) to the users, but for the administrator can be used to update and modifiy the media content.
 
-Secondly you can build the firmware for a Raspberry Pi model.   This includes the Zero through the model 4.  When using the Raspberry Pi, there is limit of about 7 users on the native WiFi but external WiFi modules can be added to increase the capability of connections.  This limit is due to the hardware used.  Additionally, with the Raspberry Pi you can use the internal WiFi for a station connection to an access point while using an external WiFi module for AP mode connections to users.
-
-Contact help@connectbox.org if you have other questions regarding the software or hardware.
+Contact help@connectbox.org if you have other questions regarding the software or hardwarae.

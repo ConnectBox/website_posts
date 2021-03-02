@@ -1,10 +1,8 @@
-The following document explains how to build the firmware for a ConnectBox.
-This can be done on a Windows machine with VirtualBox or on a Mac or on a Raspberry Pi 3+ or 4
+<h2>The following document explains how to build the firmware for a ConnectBox.</h2>
+<h2>This can be done on a Windows machine with VirtualBox or on a Mac or on a Raspberry Pi 3+ or 4</h2>
+<a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/making_an_image.md">Makiing A ConnectBox Software Image</a>
 
-Makiing A ConnectBox Software Image https://github.com/ConnectBox/connectbox-pi/blob/master/docs/making_an_image.md
-
-
-
+&nbsp;
 
 After making the firmware, you need the hardware configured.  There are two basic styles:
 

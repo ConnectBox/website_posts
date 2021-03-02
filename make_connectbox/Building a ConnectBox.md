@@ -3,7 +3,6 @@
 <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/making_an_image.md">Makiing A ConnectBox Software Image</a>
 
 &nbsp;
-
 After making the firmware, you need the hardware configured.  There are two basic styles:
 
 Hardware made with the NEO Pi from FriendlyArm with a customized PCB and case that accommodates a 6200maH battery and has a built in RTL8812au WiFi chip or you can build your design using the NEO Pi and another WiFi chip without any battery.

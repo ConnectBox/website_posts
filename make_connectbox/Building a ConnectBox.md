@@ -10,11 +10,11 @@ Secondly you can build the firmware for a Raspberry Pi.  This includes the Model
 
 Contact help@connectbox.org if you have other questions regarding the software or hardwarae.
 
-WiFi Modules that have been tested and used include:
-RT5372 - by Realtek /*
-RTL8192CU - by Realtek  /*
-MT7601U - by Realtek
-RT8812AU - by Realtek
-WUSB6100M - by Linksys  /*
-
-/*Prefered Units
+WiFi Modules that have been tested and used include:&nbsp;
+RT5372 - by Realtek /*&nbsp;
+RTL8192CU - by Realtek  /*&nbsp;
+MT7601U - by Realtek&nbsp;
+RT8812AU - by Realtek&nbsp;
+WUSB6100M - by Linksys  /*&nbsp;
+&nbsp;
+/*Prefered Units&nbsp;

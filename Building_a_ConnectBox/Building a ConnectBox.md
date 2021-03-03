@@ -1,7 +1,7 @@
 Building a ConnectBox
 
-**The following document explains how to build the firmware for a ConnectBox.
-**This can be done on  a Windows machine with VirtualBox running Linux or on a Mac or a Raspberry Pi 3+ 4
+** The following document explains how to build the firmware for a ConnectBox. **
+** This can be done on a Windows or Mac machine with VirtualBox running Linux or on a Raspberry Pi 3+ or 4
 
 <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/doc/making_an_image.md">Makind A ConnectBox Software Image</a>
 &nbsp;

@@ -12,15 +12,3 @@ proposal on cost and shipping.  If you approve it will become an invoice you ca
 If you have any question please write us at help@connectbox.technology
 
 &nbsp;
-
-<hr />
-
-<span style="color: steelblue;">The following articles describe how to build your own ConnectBox and the key functions of constructing, administering, and further developing the ConnectBoxes.</span>
-<h1>Making Your Own ConnectBox</h1>
-See <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/deployment.md">Deployment Docs</a>
-<h1>Building a ConnectBox image</h1>
-See <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/making_an_image.md">Making a Connectbox Image</a>
-<h1>Connectbox setup and administration</h1>
-See <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/administration.md">Administration Docs</a>
-<h1>Developing the ConnectBox Software</h1>
-See <a href="https://github.com/ConnectBox/connectbox-pi/blob/master/docs/development.md">Development Docs</a>

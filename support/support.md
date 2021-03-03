@@ -24,7 +24,7 @@ There are a few steps (a few more than we’d like to be honest, but we’re wor
 5. Pop it back in the ConnectBox and start it.
 
 
-## How do I connecting to my ConnectBox via SSH?
+## How do I connect to my ConnectBox via SSH?
 By default, your ConnectBox has SSH disabled over the LAN port.  It is relatively simple to turn it on.  Essentially, you need to create a specifically named directory and a file in that directory on your external USB stick.  Have it inserted, then boot the device.  The ConnectBox will automatically see those items and thereby enable SSH support over the LAN.  The folder must be named:
  
 **.connectbox** (in all lowercase and with the preceeding period)
@@ -43,7 +43,7 @@ _username:_ **root**
 
 _password:_ **connectbox**
 
-## How do I enable PHP for my ConnectBox web Server?
+## How do I enable PHP for my ConnectBox web server?
 
 The ConnectBox software image does not come with PHP installed by default. However, with a few commands, you can enable PHP to work with your files on your external USB stick.  Follow the instructions below:
 

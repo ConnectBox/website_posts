@@ -1,7 +1,5 @@
 # Support
 
-This is the Support page.
-
 ## Send Feedback to the Developers: 
 Send an email to: <help@connectbox.technology>
 
@@ -16,7 +14,7 @@ Send an email to: <help@connectbox.technology>
 
 # Frequently Asked Questions (FAQ):
 
-## Reset your ConnectBox back to "factory condition"
+## How do I reset my ConnectBox back to "factory condition"?
 There are a few steps (a few more than we’d like to be honest, but we’re working on the update mechanism).
 
 1. Download the latest release image from GitHub: https://github.com/ConnectBox/connectbox-pi/releases/ Pick the latest version of the *Release* branch and not the *Developer* version.
@@ -26,7 +24,7 @@ There are a few steps (a few more than we’d like to be honest, but we’re wor
 5. Pop it back in the ConnectBox and start it.
 
 
-## Connecting to your ConnectBox via SSH
+## How do I connecting to my ConnectBox via SSH?
 By default, your ConnectBox has SSH disabled over the LAN port.  It is relatively simple to turn it on.  Essentially, you need to create a specifically named directory and a file in that directory on your external USB stick.  Have it inserted, then boot the device.  The ConnectBox will automatically see those items and thereby enable SSH support over the LAN.  The folder must be named:
  
 **.connectbox** (in all lowercase and with the preceeding period)
@@ -45,7 +43,7 @@ _username:_ **root**
 
 _password:_ **connectbox**
 
-## Enabling PHP for your ConnectBox web Server
+## How do I enable PHP for my ConnectBox web Server?
 
 The ConnectBox software image does not come with PHP installed by default. However, with a few commands, you can enable PHP to work with your files on your external USB stick.  Follow the instructions below:
 
@@ -124,7 +122,7 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
 * Test that the changes worked by typing `http://connectbox/hello.php` which will display "Hello World" on the screen. If your device tries to download the file instead of rendering it, go back and ensure that the Static site configuration is enabled.
 * You are now all set to use PHP in your web applications.
 
-## Installing WordPress onto your ConnectBox (Advanced)
+## How do I install WordPress onto my ConnectBox (Advanced)?
 
 * Using the above described method, connect to your ConnectBox via SSH to get a BASH console and that your ConnectBox has internet access.  Easiest way to do this is to connect an Ethernet cable from your router to the ConnectBox's LAN port.  Depending on the model of ConnectBox that you have, you may need to take the case off to get to the LAN port.
 * Enter in the following commands at the console line:

@@ -4,11 +4,9 @@
 
 [DOWNLOAD THIS GUIDE AS PDF](https://github.com/ConnectBox/website_posts/raw/master/GettingStarted/ConnectBox-GettingStarted_V6.pdf)
 
-
-
 This ConnectBox is nearly ready to go already. Just a few things that you need to do first to make the end user experience useful.
 
-## Overview and Initial Administration / Setup:
+## Initial Administration / Setup
 
 - ConnectBox comes with system software. No content is included. You'll need to add your own content to the device using the guidelines in the section
 
@@ -18,23 +16,11 @@ This ConnectBox is nearly ready to go already. Just a few things that you need t
 
 - With the microUSB charger plugged in or with a relatively full battery, turn your unit on using the switch on the side of the unit. Allow a **minute** or two to pass before using a wireless device to locateand join the default wireless network called _ConnectBox - Free__Media_
 
-You will know when it is available by the yellow LED turning on. (Note: that if you charge your unit and run the unit simultaneously in a hot climate it may cause a red flashing indicator of high temperature internal to the unit.)
-
-
-_Note: if you are connecting from a mobile device it may &#39;validate the internet connectivity and/or check if a login is required for the network join&#39;. In this case it may show a web browser window that say&#39;s to connect to_ [http://connectbox](http://connectbox/) or [http://wi_fi](htpp://wi_fi/)_. In some cases you may need to go to the &#39;more&#39; menu and &#39;keep the connection&#39; – close the default browser and re-open a web browser on the device and enter_ [http://connectbox](http://connectbox/) or [http://wi_fi](http://wi_fi) _in the URL window. This should open the default front page of the Connectbox._
-
-<img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect1.jpg" alt="WebConnect1" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect2.jpg" alt="WebConnect2" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect3.jpg" alt="WebConnect3" width="300"> <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/WebConnect4.jpg" alt="WebConnect4" width="300">
-
-Switching between views showing what you should do next.  When you’re ready click OK.  To use the ConnectBox you need to open up a browser on your device (native browser, chrome, safari, firefox, etc.)  and type in the web address of http://wi.fi which will then result in seeing the main ConnectBox window.  If there has not been any data loaded onto the device it will only show the single README.txt file as:
+_Note: if you are connecting from a mobile device it may &#39;validate the internet connectivity and/or check if a login is required for the network join&#39;. In this case it may show a web browser window that say&#39;s to connect to_ [http://connectbox](http://connectbox/)_. In some cases you may need to go to the &#39;more&#39; menu and &#39;keep the connection&#39; – close the default browser and re-open a web browser on the device and enter_ [http://connectbox](http://connectbox/) _in the URL window. This should open the default front page of the Connectbox._
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/first_run.png" alt="First Run" width="300">
 
-
-Although the default settings for the ConnectBox make it usable without any changes, the Configuration options (discussed below) are available for those who wish to customize the operation of the ConnectBox.
-
-## The Adminstrator Web Page:
-
-Navigate to the Administration area: [http://connectbox/admin](http://connectbox/admin) (or press the cog icon on the bottom right of the screen) and login with the default Connectbox credentials (username and password are casesensitive):
+1. Navigate to the Administration area: [http://connectbox/admin](http://connectbox/admin) (or press the cog icon on the bottom right of the screen) and login with the default Connectbox credentials (username and password are casesensitive):
 
 - username: admin
 - password: connectbox
@@ -211,8 +197,7 @@ This screen shows the most popular downloaded or viewed files on the unit by nam
 If no buttons are pressed after 10 seconds, then the screen will go black again to conserve battery power.  Pressing the Up button for more than 1 second will again show the first screen.
 
 If at the number 6th screen you push and hold both left and right buttons for more than 5 seconds you will open a file copy menu which is explained in more detail in the following block diagram:
-
-
+ 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/OLED8.png" alt="GUI" width="2502">
 
 

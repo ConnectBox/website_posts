@@ -4,19 +4,19 @@
 <br/><br/>            
 <img class="alignnone wp-image-210" src="https://connectbox.technology/wp/wp-content/uploads/2020/06/ConnectBox-BatteryVersion6.png" alt="" width="388" height="274" />  
 
-###Model P - Battery Operated
+### Model P - Battery Operated
         
 <br/><br/>
 <img class="alignnone wp-image-211" src="https://connectbox.technology/wp/wp-content/uploads/2020/06/ConnectBox-Non-Battery-Transparent-BG.png" alt="" width="488" height="360" /> 
 <br/><br/>
-###Model S - Line Powered
+### Model S - Line Powered
 
 <br/><br/>
 
 #Overview and Initial Connection
 This ConnectBox is nearly ready to go, just a few things that you need to do first to make the end user experience useful.
 
-##Initial Setup
+## Initial Setup
 
 1. ConnectBox comes with internal system software. No content is included other than a readme file. You’ll need to add your own content to the device using the guidelines in the sections.
 2. Your battery version ConnectBox comes with an internal lithium-ion battery which is shipped at 30% charge level. To charge the battery, you’ll need to connect it to a 1A or greater microUSB charger like are found with many cell phones. For charging from an empty to full battery, expect it to take around 4-7 hours. Your ConnectBox has built-in low battery protection which prevents the battery from going into deep discharge as well as from overcharging.  <span style="color: #ff0000;">PLEASE FULLY CHARGE YOUR CONNECTBOX BEFORE THE FIRST USE</span>.
@@ -44,7 +44,7 @@ Switching between views showing what you should do next.  When you’re ready c
 
 Although the default settings for the ConnectBox make it usable without any changes, the Configuration options (discussed below) are available for those who wish to customize the operation of the ConnectBox.
 
-#The Administrator Web Page
+# The Administrator Web Page
 
 
 Navigate to the Administration area: <a href="http://connectbox/admin">http://connectbox/admin </a> (or press the cog icon on the bottom right of the screen)  and login with the default Connectbox credentials (username and password are case sensitive):
@@ -58,7 +58,7 @@ Navigate to the Administration area: <a href="http://connectbox/admin">http://co
 <ul></ul>
 
 
-#Configuring your unit
+# Configuring your unit
 
 Configuration of your unit is done through the following 5 configuration pages:
 
@@ -73,21 +73,21 @@ Configuration of your unit is done through the following 5 configuration pages:
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/020721_Admin2.jpg" />
 
 &nbsp;
-##Configuration  Items
+## Configuration  Items
 
-###HOSTNAME
+### HOSTNAME
 Change the name of the hostname (by default this is ‘connectbox’) to something of your own choosing. From the admin menu, go to (Configure -&gt; Hostname). This only appears in the location bar of the browser. If you are changing the hostname, you will need to use the new [http://hostname/]() for the default web page, or [http://hostname/admin]()for the administrative area. Additionally, new login credentials will be asked for.
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/020721_Admin3.jpg" />
 
 &nbsp;
-###WiFi SSID
+### WiFi SSID
 Change the name of the wireless network. (Configure -&gt; SSID). When you do this, you will be disconnected from the wireless network and you will need to locate and join the newly named wireless network. (a maximum of 32 characters can be used.)
 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/020721_Admin4.jpg" />
 
 &nbsp;
-###WiFi Channel
+### WiFi Channel
 
 Change the WiFi channel to something that might be less congested in your area. (Configure -&gt; Channel) Your choices are channels 1 – 11 from the dropdown menu. When you change the WiFi channel, you will temporarily be disconnected form the Connectbox until your device reconnects to the WiFi SSID on the new channel.
 
@@ -96,7 +96,7 @@ Change the WiFi channel to something that might be less congested in your area. 
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/020721_Admin5.jpg" />
 
 &nbsp;
-###Icon-Only UI Banner Message
+### Icon-Only UI Banner Message
 
 If you perhaps would like to share with your connected users some sort of banner message (e.g., contact info or organization name) you can set this from the (Configure -&gt; Banner Message) menu item. This box accepts input as either plain text or as html formatted. An example of something that would produce a banner that looks like this:
 &nbsp;
@@ -109,7 +109,7 @@ Brought to you by: <strong>Global Systems Design</strong>
 Using the html format of:
 
 &nbsp;
-&lt;p&gt;Brought to you by: &lt;span style="color: #008000;"&gt;&lt;strong&gt;Global Tech Team&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;+1-800-555-1212 &lt;em&gt;(USA)&lt;/em&gt;&lt;/p&gt;
+***&lt;p&gt;Brought to you by: &lt;span style="color: #008000;"&gt;&lt;strong&gt;Global Tech Team&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;+1-800-555-1212 &lt;em&gt;(USA)&lt;/em&gt;&lt;/p&gt;***
 
 &nbsp;
 
@@ -117,7 +117,7 @@ Using the html format of:
 
 
 &nbsp;
-###Enabling Custom Web Interface
+### Enabling Custom Web Interface
 
 By default, your ConnectBox is configured to run using what we call the “Icon-Only User Interface”. In this mode, the content that is displayed in your end user’s browser looks similar to a file explorer window. Each piece of media located on your USB flash disk is displayed as a file or folder allowing navigation into subfolders. This is the perfect option for content that is perhaps dynamic where you may be adding in new files each day and you don’t want to necessarily worry about having to format the display. Just add in your new media files, turn on the device and it will display it.
 
@@ -132,22 +132,22 @@ However, from the ConnectBox Administration menu, you do need to trigger this mo
 <img src="https://raw.githubusercontent.com/ConnectBox/website_posts/master/GettingStarted/020721_Admin7.jpg" />
 
 &nbsp;
-##System Control Items
+## System Control Items
 
-###Unmounting the USB key
+### Unmounting the USB key
 Allows for safe removal of the USB key
 
 &nbsp;
-###Shutting Down the Unit
+### Shutting Down the Unit
 Will shut down the ConnectBox remotely – Note: power is still on, but all functions will stop and the WiFi signal will stop. To reduce battery, drain, turn the power switch off.  (This can be used in creative access countries to quickly shut the unit down without having to touch the unit)
 
 &nbsp;
-###Rebooting the Unit
+### Rebooting the Unit
 
 Will shut down and restart the ConnectBox – Note: it will take several seconds before the WiFi signal goes away and comes back again. This forces all attached devices to disconnect and then have to reconnect to use the ConnectBox.
 
 &nbsp;
-###Resetting to Default
+### Resetting to Default
 
 This will reset all options to the default configuration and wipe all previous statistics/history.
 
@@ -157,7 +157,7 @@ This will reset all options to the default configuration and wipe all previous s
 
 &nbsp;
 
-##Adding in Media Content
+## Adding in Media Content
 
 You have the option of connecting an external USB stick to the USB port that is available on the ConnectBox’s exterior. The USB port will in a sense override any content that is displayed on the microSD card within the unit. The USB stick should be formatted for FAT32 format.  We recommend a slim line USB media stick like the SanDisk Cruzer line for low profile and USB 3 speed is recommended for faster system operation.   Media content can be added to it using a Windows or Mac system.  Folders can be used at your choosing and the file naming conventions can utilize the full character set of UTF-8, meaning non-roman scripts can be used.
 
@@ -169,7 +169,7 @@ The unit will default to a simple Icon only interface allowing you simple naviga
 
 
 &nbsp;
-##Icon-Only User Interface Suggestions
+## Icon-Only User Interface Suggestions
 
 The ConnectBox will display an appropriate icon for each folder on your USB stick. A folder icon can be set in one of these ways:
 
@@ -203,7 +203,7 @@ A second methodology to add content to a connect box is to use the internal stor
 
 &nbsp;
 
-##Using the Chat functionality
+## Using the Chat functionality
 
 Built into the main function of the Connectbox is the ability for users connected to the box to converse with one another.  This is entered by tapping the chat icon on the top right of the screen:
 
@@ -239,7 +239,7 @@ To exit the chat function simply press the X on the top right of the screen.
 
 &nbsp;
 
-#LEDs and Screen Usage
+# LEDs and Screen Usage
 <img class="alignnone size-full wp-image-210" src="https://connectbox.technology/wp/wp-content/uploads/2020/06/ConnectBox-BatteryVersion6.png" alt="" width="1000" height="500" />
 
 &nbsp;
@@ -358,7 +358,7 @@ If at any active screen you push and hold both left and right buttons for more t
 
 &nbsp;
 
-###Optional Features:
+### Optional Features:
 
 &nbsp;
 

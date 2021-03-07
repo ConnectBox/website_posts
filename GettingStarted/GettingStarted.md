@@ -13,7 +13,7 @@
 
 <br/><br/>
 
-#Overview and Initial Connection
+# Overview and Initial Connection
 This ConnectBox is nearly ready to go, just a few things that you need to do first to make the end user experience useful.
 
 ## Initial Setup

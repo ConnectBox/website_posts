@@ -124,7 +124,25 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
 
 ## How do I install WordPress onto my ConnectBox (Advanced)?
 
-* Using the above described method, connect to your ConnectBox via SSH to get a BASH console and that your ConnectBox has internet access.  Easiest way to do this is to connect an Ethernet cable from your router to the ConnectBox's LAN port.  Depending on the model of ConnectBox that you have, you may need to take the case off to get to the LAN port.
+* Using the above described method, connect to your ConnectBox via SSH to get a BASH console and that your ConnectBox has internet access.  Easiest way to do this is to connect an Ethernet cable from your router to the ConnectBox's LAN port.  Depending on the model of ConnectBox that you have, you may need to take the case off to get to the LAN port. Alternatively, you can use an external USB WiFi module if it is a Realtek adapter or Railink adaptor.  If you have problems with finding an adapter that is recognized contact Help@connectbox.org  Once the adapter is installed, you will need to use “armbian-config” as root to configure it for connection to your router.  
+To connect to an access point you will need to modify the /etc/network/interfaces file and add the following lines at the end of the file..
+allow-hotplug wlan1
+iface wlan1 inet dhcp
+	wpa-ssid “<your local network>”
+ 	wpa-psk “<your local network password>”
+ 
+Once this is completed you should be able to enter at the command line ifup wlan1
+This will raise the interface and attempt to login to your router.  Note that in the above text the quotation marks are needed but the <xxxx> is the ssid and password without the < >.
+you can test the internet connection by typing the  following into the command line:
+ping google.com
+it should come back with something like:
+(den08s05-in-x0e.1e100.net (2607:f8b0:400f:802::200e)) 56 data byes
+64 bytes from den 08s05-in-x0e.1e100.net (2607:f8b0:400f:802::200e): icmp_seq=1 ttl=113 time 11.1ms
+etc.
+
+to exit the ping enter ^C
+
+Once you have internet access:
 * Enter in the following commands at the console line:
   * `apt-get update`
   * `apt install -y mariadb-server`
@@ -132,29 +150,28 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
   * `sudo systemctl enable mariadb.service`
   * `mysql_secure_installation`
     * `Enter current password for root (enter for none):`  <<===Just hit Enter here
-    * `Set root password (Y/n)`  <<===Add in a password here by replying Y
+    * `Set root password (Y/n)`  <<===Add in a password here by replying Y but remember this password
     * `Remove anonymous users (Y/n)`  <<===Just hit Enter here
     * `Disallow root login remotely? (Y/n)`  <<===Just hit Enter here
     * `Remove test database and access to it (Y/n)`  <<===Just hit Enter here
     * `Reload privilege tables now? (Y/n)`  <<===Just hit Enter here
   * `mysql -u root -p`
-								<<===When asked use the password set above
-    From within the MySQL command prompt, type in these commands to create a database for WordPress and a user
+When asked use the password set above
+    From within the MySQL command prompt, type in these commands to create a database for WordPress and a user:
     * `CREATE DATABASE connectbox DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;`
-    * `GRANT ALL ON connectbox.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';`  <<=== note that if you change password then it must be changed below as well in wp-config.php
+    * `GRANT ALL ON connectbox.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password' note that if you change password then it must be changed below as well in wp-config.php
     * `FLUSH PRIVILEGES;`
     * `EXIT;`  <<===Exits you back to the regular console prompt
-  * `apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-cli php-imagick`
+    * `apt install -y php php-fpm php-common php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-cli php-ldap php-imagick`
   * `nano /etc/nginx/sites-available/connectbox_static-site.conf` 
-    * Modify this existing line to add in `index.php` before the other index types
-    <pre>index index.php index.html index.htm;</pre>
+Modify this existing line to add in `index.php` before the other index types
+index index.php index.html index.htm;
 	
 	You also need to modify the root file system to:
-	<pre> root /var/www/html/wordpress; </pre>
+	root /var/www/html/wordpress; 
 	
     Add this whole section before the end of the last closing } character
     
-	<pre>
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
@@ -165,16 +182,17 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
     location ~* \.(css|gif|ico|jpeg|jpg|js|png)$ {
         expires max;
         log_not_found off;
-    }</pre>
+    }
+Reload the nginx server with:
   * `systemctl reload nginx`
   
   
   Lastly, we install the latest version of WordPress onto the USB drive.
 
   * `cd /tmp`
-  * `curl -LO https://wordpress.org/latest.tar.gz`
-  * `tar xzvf latest.tar.gz -C /var/www/html`
-  * `sudo chown -R www-data:/var/www/html/wordpress`
+  * `curl  -LO https://wordpress.org/latest.tar.gz`
+  * `tar xzf latest.tar.gz -C /var/www/html`
+  * `sudo chown -R www-data /var/www/html/wordpress`
   * `sudo systemctl start mariadb.service`
   * `sudo systemctl enable mariadb.service`
   * `cd /var/www/html/wordpress`
@@ -182,17 +200,16 @@ Again, use  **CTRL-X** followed by **Y** to save the changes to the file and exi
   * `nano wp-config.php`
     
     Change out the following lines:
-    <pre>/** The name of the database for WordPress */
+“ The name of the database for WordPress */
     define('DB_NAME', 'connectbox');
     
-    /** MySQL database username */
+    /” MySQL database username */
     define('DB_USER', 'wordpressuser');
     
-    /** MySQL database password */
+    /” MySQL database password */
     define('DB_PASSWORD', 'password');  <<=== note that if you change password then it must be changed below as well in wp-config.php
-    </pre>
     Add in the below line somewhere in the config file:
-    <pre>define('FS_METHOD', 'direct');</pre>
+define('FS_METHOD', 'direct');
 	
 	Write out the file and exit nano
 	
@@ -207,6 +224,7 @@ With WordPress running you may need to create a micro-USB based swap file to ena
   
 This will show the current swap file.  By default there is a ram based swap file /dev/zram1 partition about 119M  To add a second swap file of 1GB do the following
 
+..* `sudo swapoff -a`
   * `sudo fallocate -l 1G /swapfile`
   * `sudo chmod 600 /swapfile`
   * `sudo mkswap /swapfile`
@@ -222,7 +240,7 @@ Paste the following line into the file:
   
 Then write the file with ^O then exit with ^X
 
-To verify the change check the swap situation now with:
+To verify the change, check the swap situation now with:
 
   * `sudo swapon --show`
   
@@ -250,4 +268,4 @@ you can check the current value of 'Swappiness' with
 
 and the output should be 60
 
-  
+

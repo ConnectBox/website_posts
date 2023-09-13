@@ -1,11 +1,11 @@
 # What is a ConnectBox?
 
 ![disassembled box](https://raw.githubusercontent.com/ConnectBox/website_posts/master/what_is_connectbox/cb.png "Disassembled ConnectBox")
-ConnectBox are self-contained, self-powered, WiFi based portable media distribution system. It allows users to create a full featured ‘digital library’ from which media (text, video, audio, applications) can be shared on mobile phones, tablets, laptops, desktops in an off-the-grid environment without depending on access to the internet or electricity. Any device with WiFi capability can wirelessly connect to a ConnectBox and access/download content with a simple web browser. ConnectBox will support over 16+ simultaneous 360p video streams/download sessions from different devices.
+A ConnectBox is a self-contained, self-powered, WiFi based portable media distribution system. It allows users to create a full featured ‘digital library’ from which media (text, video, audio, applications) can be shared on mobile phones, tablets, laptops, desktops in an off-the-grid environment without depending on access to the internet or electricity. Any device with WiFi capability can wirelessly connect to a ConnectBox and access/download content with a simple web browser. ConnectBox will support over 16+ simultaneous 360p video streams/download sessions from different devices.
 
 ## **<span style="color:gray">Where would a ConnectBox be used?</span>**
 
-A ConnectBox acts as a local digital access point that isn’t capable of being restricted in traditional ways; allowing information to penetrate areas that would otherwise be unreachable. From educational, book study, language learning, audio programs, video content, text materials and applications can be delivered regardless of local internet connectivity or regional/national censorship. If you can provide power occasionally, a ConnectBox can provide the digital resources for learners. While internet access in many communities is unreliable or unaffordable, you can deliver important educational, healthcare and community resources without requiring users to incurring additional costs; they connect with the devices they already have.
+A ConnectBox acts as a local digital access point that isn’t capable of being restricted in traditional ways; allowing information to penetrate areas that would otherwise be unreachable. Educational materials, book study, language learning, audio programs, video content, text materials and applications can be delivered regardless of local internet connectivity or regional/national censorship. If you can provide power occasionally, a ConnectBox can provide the digital resources for learners. While internet access in many communities is unreliable or unaffordable, you can deliver important educational, healthcare and community resources without requiring users to incur additional costs; they connect with the devices they already have.
 
 ## **<span style="color:gray">What is it made of?</span>**
 
@@ -20,7 +20,7 @@ The amazing thing about a ConnectBox is that it can be built for around $70 in h
 
 ## **<span style="color:gray">So what’s so unique about a ConnectBox?</span>**
 
-+ Battery Powered – no need for AC mains, power adapters, external batteries. Its self- contained.
++ Battery Powered – no need for AC mains, power adapters, external batteries. It is self- contained.
 + Its main menus are simple Icons which you can customize for your use. Additionally, more complex webpages can be developed and inserted as your requirements become more sophisticated.
 + It has large storage; capacity limited only by the size of flash drive attached. It contains on board storage space as well as a USB port allowing additional flash drives to be attached.
 + No internet service is required for it to be used.
@@ -28,7 +28,7 @@ The amazing thing about a ConnectBox is that it can be built for around $70 in h
 + It fits into your shirt pocket.
 + No special applications are required on the devices connecting to it. Any device with WiFi and a built-in web browser will work.
 + The user interface dynamically scales to the screen size of the device attached.
-+ Built-in Administration interface allows for customization of the SSID, host name, WiFi channel and introductory text.
++ Built-in administration interface allows for customization of the SSID, host name, WiFi channel and introductory text.
 + You can share any type of files easily.
 + Streams/downloads movies, music, audio files, photos, text files and device applications.
 + Built in statistics for users who have accessed the device and files downloaded/viewed.
